@@ -31,7 +31,7 @@
   min-width: 500px;
 }
 
-.heading {
+.opportunities .top .heading {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 6px;
@@ -42,7 +42,8 @@
   font-size: 64px;
   line-height: 130%;
   letter-spacing: 0%;
-  min-width: 2000px;
+  /* min-width: 2000px; */
+  min-width: 700px;
 }
 
 .post-heading {
@@ -107,6 +108,7 @@
     width: 100%;
     height: auto;
     display: block;
+    /* border-color: red; */
   }
 
   /* Position text on top of image */
@@ -121,15 +123,15 @@
     z-index: 2;
   }
 
-  .pre-heading {
-    font-size: 16px;
-    margin-bottom: 6px;
-    color: #9b4df0;
+  .opportunities .top .pre-heading {
+    /* font-size: 16px; */
+    /* margin-bottom: 6px; */
+    /* color: #9b4df0; */
     min-width: unset;
   }
 
-  .heading {
-    font-size: 28px;
+  .opportunities .top .heading {
+    font-size: 12px;
     line-height: 130%;
     margin-bottom: 6px;
     color: #3f186a;
@@ -147,11 +149,13 @@
     bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 8px;
+    justify-content: center;
+    /* gap: px; */
     padding: 0;
     z-index: 2;
+    /* background-color: rebeccapurple; */
   }
 
   .opportunities .button .logo > img {
@@ -161,8 +165,9 @@
 
   .opportunities .button .button-name {
     font-size: 12px;
-    padding: 8px 16px;
-    min-width: auto;
+    padding: 8px 1px;
+    min-width: 130px;
+    /* background-color: red; */
     border-radius: 4px;
   }
 }
@@ -187,17 +192,17 @@
   }
 
   .opportunities .button {
-    bottom: 18%;
+    bottom: 40%;
   }
 
   .opportunities .button .logo > img {
-    height: 24px;
-    width: 24px;
+    height: 20px;
+    width: 22px;
   }
 
   .opportunities .button .button-name {
     font-size: 11px;
-    padding: 6px 14px;
+    padding: 7px 7px;
   }
 }
 
@@ -557,12 +562,13 @@
   /* Mobile Typography */
   .footer-col-header {
     font-size: 16px;
-    margin-right: 36px;
+    margin-right: 28px;
   }
 
   .footer-col-details {
     font-size: 14px;
     margin-top: 10px;
+    min-width: 150px;
   }
 
   /* Mobile Copyright */
