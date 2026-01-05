@@ -69,6 +69,10 @@
   /* background: red; */
 }
 
+.opportunities .opportunities-mobile {
+  display: none;
+}
+
 .opportunities .button .logo > img {
   background-color: #3f186a;
   font-size: 300px;
@@ -85,6 +89,116 @@
   border: 2px solid #3f186a;
   padding: 10px;
   min-width: 150px;
+}
+
+/* =====================================================
+   OPPORTUNITIES SECTION - MOBILE RESPONSIVENESS
+   ===================================================== */
+
+/* --- Mobile Styles (max-width: 767px) --- */
+@media (max-width: 767px) {
+  /* Hide first image on mobile */
+  .opportunities > img:first-of-type {
+    display: none;
+  }
+
+  /* Show second image (1.2.svg) on mobile */
+  .opportunities > img:nth-of-type(2) {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Position text on top of image */
+  .opportunities .top {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    max-width: 85%;
+    text-align: center;
+    z-index: 2;
+  }
+
+  .pre-heading {
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: #9b4df0;
+    min-width: unset;
+  }
+
+  .heading {
+    font-size: 28px;
+    line-height: 130%;
+    margin-bottom: 6px;
+    color: #3f186a;
+    min-width: unset;
+  }
+
+  .post-heading {
+    font-size: 14px;
+    color: #9b4df0;
+  }
+
+  /* Button positioned on image */
+  .opportunities .button {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    z-index: 2;
+  }
+
+  .opportunities .button .logo > img {
+    height: 28px;
+    width: 28px;
+  }
+
+  .opportunities .button .button-name {
+    font-size: 12px;
+    padding: 8px 16px;
+    min-width: auto;
+    border-radius: 4px;
+  }
+}
+
+/* --- Small Mobile Styles (max-width: 480px) --- */
+@media (max-width: 480px) {
+  .opportunities .top {
+    top: 20%;
+    max-width: 90%;
+  }
+
+  .pre-heading {
+    font-size: 14px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .post-heading {
+    font-size: 13px;
+  }
+
+  .opportunities .button {
+    bottom: 18%;
+  }
+
+  .opportunities .button .logo > img {
+    height: 24px;
+    width: 24px;
+  }
+
+  .opportunities .button .button-name {
+    font-size: 11px;
+    padding: 6px 14px;
+  }
 }
 
 /* =====================================================
