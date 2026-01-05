@@ -39,8 +39,60 @@
   gap: 10px;
 }
 
-.footer-banner {
-  z-index: 1;
+/* Mobile */
+@media (max-width: 767px) {
+  .footer-media {
+    padding-right: 80px;
+    margin-right: 38px;
+    /* background-color: pink; */
+  }
+
+  .footer-media img {
+    width: 42px;
+    height: 42px;
+  }
+  .footer {
+    flex-direction: column;
+    padding-right: 0;
+    padding: 20px 15px;
+    height: 602px;
+    gap: 20px;
+  }
+
+  .footer-mob {
+    display: none;
+  }
+
+  .footer-logo {
+    width: 106.29px;
+    height: 93px;
+    opacity: 1;
+    display: block;
+    margin-right: 200px;
+    margin-bottom: 300px;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-row img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .footer-col-header {
+    font-size: 16px;
+    font-family: "Museo Sans 700";
+    margin-bottom: 8px;
+  }
+
+  .footer-col-details {
+    font-size: 14px;
+  }
 }
 
 .footer-col-header {
