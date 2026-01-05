@@ -275,7 +275,7 @@
 
 .exhibition {
   height: 667.3px;
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
   background: linear-gradient(
     180deg,
     #4b0f75 0%,
@@ -344,8 +344,12 @@
 
 .exhibition .exhibition-row .exhibition-col .heading {
   color: #3f186a;
-  margin-right: 30px;
+  margin-right: 3px;
+  font-size: 20px;
+  width: 50px;
+  font-weight: 600;
 }
+
 .exhibition .exhibition-row .exhibition-col .sub-heading {
   color: #3f186a;
 }
