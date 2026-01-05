@@ -1,23 +1,8 @@
-.footer-copyright {
-  width: 100%;
-  background-color: #ffffff;
-  text-align: center;
-  opacity: 1;
-  margin-top: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 60px;
-}
+/* =====================================================
+   FOOTER SECTION - STYLES
+   ===================================================== */
 
-.footer-copyright,
-.footer-copyright h2 {
-  background: linear-gradient(360deg, #000e38 0%, #3f186a 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
+/* --- Footer Main Container --- */
 .footer {
   display: flex;
   align-items: center;
@@ -34,32 +19,88 @@
   z-index: 0;
 }
 
+/* --- Footer Row Layout --- */
 .footer-row {
   display: flex;
   gap: 10px;
 }
 
-/* Mobile */
-@media (max-width: 767px) {
-  .footer-media {
-    padding-right: 80px;
-    margin-right: 38px;
-    /* background-color: pink; */
+/* --- Footer Column Header --- */
+.footer-col-header {
+  font-family: "Museo Sans 700", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  color: #ffffff;
+  margin-bottom: -35px;
+  margin-left: 6px;
+}
+
+/* --- Footer Column Details --- */
+.footer-col-details {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+  padding: 10px;
+}
+
+/* --- Footer Copyright Section --- */
+.footer-copyright {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(360deg, #000e38 0%, #3f186a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --- Social Media Icons --- */
+.footer-media img {
+  width: 42px;
+  height: 42px;
+  transition: transform 0.3s ease;
+}
+
+.footer-media img:hover {
+  transform: scale(1.1);
+}
+
+/* =====================================================
+   FOOTER SECTION - RESPONSIVENESS
+   ===================================================== */
+
+/* --- Desktop Styles (768px and above) --- */
+@media (min-width: 768px) {
+  .footer-copyright {
+    max-width: 496px;
+    height: 24px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 14px;
   }
 
-  .footer-media img {
-    width: 42px;
-    height: 42px;
+  .footer-mob {
+    display: flex;
   }
+}
+
+/* --- Tablet & Mobile Styles (767px and below) --- */
+@media (max-width: 767px) {
+  /* Footer Container */
   .footer {
     flex-direction: column;
-    padding-right: 0;
     padding: 20px 15px;
     height: 602px;
     gap: 20px;
     position: relative;
   }
 
+  /* Mobile Background Image */
   .footer::before {
     content: "";
     position: absolute;
@@ -72,29 +113,37 @@
     background-repeat: no-repeat;
     height: 150px;
     width: 100%;
-    /* opacity: 1; */
-    /* z-index: 0; */
     pointer-events: none;
+    z-index: 0;
   }
 
+  /* Content above background image */
   .footer > * {
     position: relative;
     z-index: 1;
   }
 
+  /* Hide desktop rows on mobile */
   .footer-mob {
     display: none;
   }
 
+  /* Social Media Section */
+  .footer-media {
+    padding-right: 80px;
+    margin-right: 38px;
+  }
+
+  /* Footer Logo */
   .footer-logo {
     width: 106.29px;
     height: 93px;
-    opacity: 1;
     display: block;
-    margin-right: 200px;
+    margin-right: 170px;
     margin-bottom: 300px;
   }
 
+  /* Footer Row Mobile Layout */
   .footer-row {
     flex-direction: column;
     gap: 15px;
@@ -102,64 +151,29 @@
     text-align: center;
   }
 
+  /* Responsive Images */
   .footer-row img {
     max-width: 100%;
     height: auto;
   }
 
+  /* Mobile Typography */
   .footer-col-header {
     font-size: 16px;
-    font-family: "Museo Sans 700";
-    margin-bottom: 8px;
+    margin-right: 36px;
   }
 
   .footer-col-details {
     font-size: 14px;
+    margin-top: 10px;
   }
-}
 
-.footer-col-header {
-  font-family: "Museo Sans", "Museo Sans 700", Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  margin-bottom: -35px;
-  font-style: Regular;
-  font-size: 20px;
-  line-height: 150%;
-  letter-spacing: 0%;
-  color: #ffffff;
-  margin-left: 6px;
-}
-
-.footer-col-details {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  padding: 10px;
-  font-family: open-sans;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 18px;
-  line-height: 150%;
-  letter-spacing: 0%;
-  color: #ffffff;
-}
-
-/* Mobile */
-@media (max-width: 767px) {
+  /* Mobile Copyright */
   .footer-copyright {
     max-width: 316px;
-    height: 43px;
+    height: auto;
     margin: 0 auto;
     padding: 10px 8px;
-    font-size: 14px;
-  }
-}
-
-/* Desktop / Full screen */
-@media (min-width: 768px) {
-  .footer-copyright {
-    max-width: 496px;
-    height: 24px;
-    margin: 0 auto;
-    padding: 0;
     font-size: 14px;
   }
 }
