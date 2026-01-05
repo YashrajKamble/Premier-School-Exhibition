@@ -74,14 +74,15 @@
   font-size: 300px;
   height: 30px;
   padding: 5px;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .opportunities .button .button-name {
   font-weight: 600;
   font-size: 14px;
   color: #3f186a;
-  border: 2px solid #101145;
+  /* border: 2px solid #101145; */
+  border: 2px solid #3f186a;
   padding: 10px;
   min-width: 150px;
 }
