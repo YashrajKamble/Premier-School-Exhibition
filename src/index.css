@@ -1,205 +1,93 @@
-/* =====================================================
-   EXHIBITION SECTION - DESKTOP STYLES (768px and above)
-   ===================================================== */
-
-/* --- Exhibition Main Container --- */
-.exhibition {
-  height: 667.3px;
-  margin-bottom: 70px;
-  background: linear-gradient(
-    180deg,
-    #4b0f75 0%,
-    #3f186a 20%,
-    #1e1638 65%,
-    #001231 100%
-  );
+.opportunities {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
 }
 
-.exhibition::before {
-  width: 100px;
-  height: 100px;
-  color: #ffffff;
-  z-index: 2;
+.opportunities > img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* --- Exhibition Title --- */
-.exhibition h2 {
-  font-family: "Museo Sans", Arial, Helvetica, sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.opportunities .top {
+  position: absolute;
+  top: 30%;
+  left: 6%;
   color: #ffffff;
-  font-weight: 700;
-  font-size: 48px;
+  max-width: 420px;
+}
+
+.pre-heading {
+  font-size: 16px;
+  margin-bottom: 6px;
+  font-family: "Museo Sans 700";
+  font-weight: 400;
+  font-style: Italic;
+  font-size: 32px;
   line-height: 150%;
-  letter-spacing: 0;
-  text-align: center;
+  letter-spacing: 0%;
+  color: #9b4df0;
+  min-width: 500px;
 }
 
-/* --- Exhibition Arrow Navigation --- */
-.exhibition .exhibition-arrow {
-  gap: 40px;
-  justify-content: center;
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #3f186a;
+  font-family: "Museo Sans 700", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  min-width: 2000px;
+}
+
+.post-heading {
+  font-size: 16px;
+  color: #9b4df0;
+  font-family: "Museo Sans 700", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: Italic;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.opportunities .button {
+  position: absolute;
+  bottom: 18%;
+  left: 6%;
+  display: flex;
   align-items: center;
-  display: flex;
+  /* gap: 10px; */
+  /* background: #ffffff; */
+  padding: 10px 0px;
+  /* border-radius: 30px; */
+  /* background: red; */
 }
 
-/* --- Exhibition Row Container --- */
-.exhibition .exhibition-row {
-  display: flex;
-  gap: 40px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scrollbar-width: none;
-  justify-content: space-evenly;
-  padding: 0 70px;
+.opportunities .button .logo > img {
+  background-color: #3f186a;
+  font-size: 300px;
+  height: 30px;
+  padding: 5px;
+  margin-top: 2px;
 }
 
-/* --- Exhibition Card --- */
-.exhibition .exhibition-row .exhibition-col {
-  background-color: #ddbfff;
-  margin-bottom: 40px;
-  min-width: 300px;
-  height: 280px;
-  border-radius: 20px;
-  border-width: 2px;
-  padding: 30px;
-}
-
-/* --- Exhibition Card Image --- */
-.exhibition .exhibition-row .exhibition-col img {
-  height: 80px;
-  width: 80px;
-}
-
-/* --- Exhibition Card Heading --- */
-.exhibition .exhibition-row .exhibition-col .heading {
+.opportunities .button .button-name {
+  font-weight: 600;
+  font-size: 14px;
   color: #3f186a;
-  margin-right: 30px;
-}
-
-/* --- Exhibition Card Sub-Heading --- */
-.exhibition .exhibition-row .exhibition-col .sub-heading {
-  color: #3f186a;
+  border: 2px solid #101145;
+  padding: 10px;
+  min-width: 150px;
 }
 
 /* =====================================================
-   EXHIBITION SECTION - TABLET RESPONSIVENESS (768px down to 768px)
-   ===================================================== */
-
-@media (max-width: 767px) {
-  /* Exhibition Main Container */
-  .exhibition {
-    height: auto;
-    margin-bottom: 40px;
-    padding: 30px 0;
-  }
-
-  /* Exhibition Title */
-  .exhibition h2 {
-    font-size: 28px;
-    line-height: 140%;
-    margin-bottom: 30px;
-    padding: 0 15px;
-  }
-
-  /* Exhibition Arrow Navigation - Hide on Mobile */
-  .exhibition .exhibition-arrow {
-    display: none;
-  }
-
-  /* Exhibition Row - Grid Layout */
-  .exhibition .exhibition-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    padding: 0 5px;
-    max-height: 650px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    scrollbar-width: thin;
-  }
-
-  /* Exhibition Card - Mobile Layout */
-  .exhibition .exhibition-row .exhibition-col {
-    min-width: unset;
-    width: 75%;
-    height: auto;
-    margin-bottom: 0;
-    padding: 0px;
-    border-radius: 15px;
-  }
-
-  /* Exhibition Card Image */
-  .exhibition .exhibition-row .exhibition-col img {
-    height: 60px;
-    width: 60px;
-    margin-bottom: 15px;
-  }
-
-  /* Exhibition Card Heading */
-  .exhibition .exhibition-row .exhibition-col .heading {
-    font-size: 16px;
-    line-height: 140%;
-    margin-bottom: 10px;
-  }
-
-  /* Exhibition Card Sub-Heading */
-  .exhibition .exhibition-row .exhibition-col .sub-heading {
-    font-size: 13px;
-    line-height: 140%;
-  }
-}
-
-/* =====================================================
-   EXHIBITION SECTION - SMALL MOBILE RESPONSIVENESS (max-width: 480px)
-   ===================================================== */
-
-@media (max-width: 480px) {
-  /* Exhibition Title */
-  .exhibition h2 {
-    font-size: 24px;
-    line-height: 130%;
-    margin-bottom: 25px;
-    padding: 0 10px;
-  }
-
-  /* Exhibition Row - Adjust Grid */
-  .exhibition .exhibition-row {
-    padding: 0 10px;
-    gap: 12px;
-    max-height: 600px;
-  }
-
-  /* Exhibition Card */
-  .exhibition .exhibition-row .exhibition-col {
-    padding: 18px;
-    margin-bottom: 0;
-  }
-
-  /* Exhibition Card Image */
-  .exhibition .exhibition-row .exhibition-col img {
-    height: 50px;
-    width: 50px;
-    margin-bottom: 12px;
-  }
-
-  /* Exhibition Card Heading */
-  .exhibition .exhibition-row .exhibition-col .heading {
-    font-size: 15px;
-    line-height: 130%;
-    margin-bottom: 8px;
-  }
-
-  /* Exhibition Card Sub-Heading */
-  .exhibition .exhibition-row .exhibition-col .sub-heading {
-    font-size: 12px;
-    line-height: 130%;
-  }
-}
-
-/* =====================================================
-   FOOTER SECTION - DESKTOP STYLES (768px and above)
+   FOOTER SECTION - STYLES
    ===================================================== */
 
 /* --- Footer Main Container --- */
@@ -225,7 +113,7 @@
   gap: 10px;
 }
 
-/* --- Footer Column Header Typography --- */
+/* --- Footer Column Header --- */
 .footer-col-header {
   font-family: "Museo Sans 700", Arial, Helvetica, sans-serif;
   font-weight: 600;
@@ -236,7 +124,7 @@
   margin-left: 6px;
 }
 
-/* --- Footer Column Details Typography --- */
+/* --- Footer Column Details --- */
 .footer-col-details {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -270,7 +158,201 @@
   transform: scale(1.1);
 }
 
-/* --- Footer - Desktop View Settings --- */
+.exhibition {
+  height: 667.3px;
+  margin-bottom: 70px;
+  background: linear-gradient(
+    180deg,
+    #4b0f75 0%,
+    #3f186a 20%,
+    #1e1638 65%,
+    #001231 100%
+  );
+  /* border-bottom-left-radius: 4000px; */
+  /* border-bottom-right-radius: 4000px; */
+}
+
+.exhibition::before {
+  width: 100px;
+  height: 100px;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.exhibition h2 {
+  font-family: "Museo Sans", Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.exhibition .exhibition-arrow {
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.exhibition .exhibition-row {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* white-space: nowrap; */
+  scrollbar-width: none;
+  justify-content: space-evenly;
+  padding: 0 70px;
+}
+
+.exhibition .exhibition-row .exhibition-col {
+  background-color: #ddbfff;
+  margin-bottom: 40px;
+  min-width: 300px;
+  height: 280px;
+  /* opacity: 1; */
+  /* gap: 30px; */
+  border-radius: 20px;
+  border-width: 2px;
+  padding: 30px;
+}
+
+.exhibition .exhibition-row .exhibition-col img {
+  height: 80px;
+  width: 80px;
+}
+
+.exhibition .exhibition-row .exhibition-col .heading {
+  color: #3f186a;
+  margin-right: 30px;
+}
+.exhibition .exhibition-row .exhibition-col .sub-heading {
+  color: #3f186a;
+}
+
+/* =====================================================
+   EXHIBITION SECTION - MOBILE RESPONSIVENESS
+   ===================================================== */
+
+/* --- Tablet & Mobile Styles (767px and below) --- */
+@media (max-width: 767px) {
+  /* Exhibition Main Container */
+  .exhibition {
+    height: auto;
+    margin-bottom: 40px;
+    padding: 30px 0;
+  }
+
+  /* Exhibition Title */
+  .exhibition h2 {
+    font-size: 28px;
+    line-height: 140%;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+
+  /* Exhibition Row - 2x2 Grid Layout with Scrollable Overflow */
+  .exhibition .exhibition-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 0 5px;
+    max-height: 650px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+  }
+
+  /* Exhibition Column - Mobile Card */
+  .exhibition .exhibition-row .exhibition-col {
+    min-width: unset;
+    width: 75%;
+    height: auto;
+    margin-bottom: 0;
+    padding: 0px;
+    border-radius: 15px;
+  }
+
+  /* Exhibition Column Image */
+  .exhibition .exhibition-row .exhibition-col img {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 15px;
+  }
+
+  /* Exhibition Column Heading */
+  .exhibition .exhibition-row .exhibition-col .heading {
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 10px;
+  }
+
+  /* Exhibition Column Sub-Heading */
+  .exhibition .exhibition-row .exhibition-col .sub-heading {
+    font-size: 13px;
+    line-height: 140%;
+  }
+
+  /* Exhibition Arrows - Hide on Mobile */
+  .exhibition .exhibition-arrow {
+    display: none;
+  }
+}
+
+/* --- Small Mobile Styles (max-width: 480px) --- */
+@media (max-width: 480px) {
+  /* Exhibition Title */
+  .exhibition h2 {
+    font-size: 24px;
+    line-height: 130%;
+    margin-bottom: 25px;
+    padding: 0 10px;
+  }
+
+  /* Exhibition Row - 2x2 Grid for Small Mobile */
+  .exhibition .exhibition-row {
+    padding: 0 10px;
+    gap: 12px;
+    max-height: 600px;
+  }
+
+  /* Exhibition Column */
+  .exhibition .exhibition-row .exhibition-col {
+    padding: 18px;
+    margin-bottom: 0;
+  }
+
+  /* Exhibition Column Image */
+  .exhibition .exhibition-row .exhibition-col img {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 12px;
+  }
+
+  /* Exhibition Column Heading */
+  .exhibition .exhibition-row .exhibition-col .heading {
+    font-size: 15px;
+    line-height: 130%;
+    margin-bottom: 8px;
+  }
+
+  /* Exhibition Column Sub-Heading */
+  .exhibition .exhibition-row .exhibition-col .sub-heading {
+    font-size: 12px;
+    line-height: 130%;
+  }
+}
+
+/* =====================================================
+   FOOTER SECTION - RESPONSIVENESS
+   ===================================================== */
+
+/* --- Desktop Styles (768px and above) --- */
 @media (min-width: 768px) {
   .footer-copyright {
     max-width: 496px;
@@ -285,12 +367,9 @@
   }
 }
 
-/* =====================================================
-   FOOTER SECTION - TABLET & MOBILE RESPONSIVENESS (max-width: 767px)
-   ===================================================== */
-
+/* --- Tablet & Mobile Styles (767px and below) --- */
 @media (max-width: 767px) {
-  /* Footer Main Container - Mobile Layout */
+  /* Footer Container */
   .footer {
     flex-direction: column;
     padding: 20px 15px;
@@ -299,7 +378,7 @@
     position: relative;
   }
 
-  /* Footer Background Decoration - Mobile */
+  /* Mobile Background Image */
   .footer::before {
     content: "";
     position: absolute;
@@ -316,24 +395,24 @@
     z-index: 0;
   }
 
-  /* Content Layer - Above Background */
+  /* Content above background image */
   .footer > * {
     position: relative;
     z-index: 1;
   }
 
-  /* Hide Desktop Rows on Mobile */
+  /* Hide desktop rows on mobile */
   .footer-mob {
     display: none;
   }
 
-  /* Footer Social Media Section - Mobile */
+  /* Social Media Section */
   .footer-media {
     padding-right: 80px;
     margin-right: 38px;
   }
 
-  /* Footer Logo - Mobile */
+  /* Footer Logo */
   .footer-logo {
     width: 106.29px;
     height: 93px;
@@ -342,7 +421,7 @@
     margin-bottom: 300px;
   }
 
-  /* Footer Row - Mobile Stack Layout */
+  /* Footer Row Mobile Layout */
   .footer-row {
     flex-direction: column;
     gap: 15px;
@@ -350,25 +429,24 @@
     text-align: center;
   }
 
-  /* Responsive Images in Footer Row */
+  /* Responsive Images */
   .footer-row img {
     max-width: 100%;
     height: auto;
   }
 
-  /* Footer Column Header - Mobile Typography */
+  /* Mobile Typography */
   .footer-col-header {
     font-size: 16px;
     margin-right: 36px;
   }
 
-  /* Footer Column Details - Mobile Typography */
   .footer-col-details {
     font-size: 14px;
     margin-top: 10px;
   }
 
-  /* Footer Copyright - Mobile Layout */
+  /* Mobile Copyright */
   .footer-copyright {
     max-width: 316px;
     height: auto;
