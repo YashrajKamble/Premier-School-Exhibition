@@ -413,6 +413,17 @@ Header Section
   padding: 10px;
 }
 
+@media (max-width: 767px) {
+  .header .register {
+    display: none;
+  }
+
+  .header div img {
+    width: 100px;
+    /* height: 50px; */
+  }
+}
+
 /* =====================================================
    Participating Schools SECTION - MOBILE RESPONSIVENESS
    ===================================================== */
