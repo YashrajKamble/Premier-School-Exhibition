@@ -425,6 +425,37 @@ Header Section
 }
 
 @media (max-width: 767px) {
+  .hero-section .hero-section-details .hero-section-details-places .table {
+    position: relative;
+    top: 270px;
+    width: 300px;
+    height: 150px;
+    right: 100px;
+  }
+
+  .hero-section
+    .hero-section-details
+    .hero-section-details-places
+    .table
+    .data:nth-child(n + 3) {
+    display: none;
+  }
+
+  .hero-section .hero-section-details .hero-section-details-places span {
+    min-width: 1000px;
+    position: relative;
+    top: 100px;
+    left: -60px;
+    font-size: 25px;
+  }
+
+  .hero-section .hero-section-details .hero-section-details-places .sub-name {
+    background-color: red;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 767px) {
   .hero-section .hero-section-trust {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -434,6 +465,18 @@ Header Section
 
   .hero-section .hero-section-trust img {
     width: 135px;
+  }
+
+  .hero-section .hero-section-details-images,
+  .hero-section .hero-section-details .hero-section-details-enquiry,
+  .hero-section .hero-section-details-images .first-image,
+  .hero-section .hero-section-details-images .second-image,
+  .hero-section
+    .hero-section-details-enquiry
+    .hero-section-details-enquiry
+    .hero-section
+    .hero-section-details-enquiry {
+    display: none;
   }
 }
 
