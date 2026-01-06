@@ -61,9 +61,12 @@
   letter-spacing: 0%;
   color: #ffcc81;
 }
+.hero-section .hero-section-details .hero-section-details-places .sub-name {
+  font-size: 28px;
+}
 
 .hero-section .hero-section-details .hero-section-details-places .table {
-  background-color: red;
+  /* background-color: red; */
   border-radius: 27px;
   justify-content: center;
   align-items: center;
@@ -76,6 +79,7 @@
   outline-offset: -6px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
 }
 
 .hero-section .hero-section-details .hero-section-details-places .table .data {
@@ -118,6 +122,148 @@
   letter-spacing: 0%;
   font-variant: small-caps;
   color: #000e38;
+}
+
+/* .hero-section .hero-section-details .hero-section-details-images {
+  background-color: red;
+  width: 812px;
+  height: 720px;
+  opacity: 1;
+  left: 600px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-section .hero-section-details .hero-section-details-images .first-image {
+  max-height: 720px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hero-section .hero-section-details .hero-section-details-images .second-image {
+  max-height: 720px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hero-section
+  .hero-section-details
+  .hero-section-details-images
+  .first-image
+  .images,
+.hero-section
+  .hero-section-details
+  .hero-section-details-images
+  .second-image
+  .images {
+  width: 200px;
+  height: 440px;
+}
+
+.hero-section
+  .hero-section-details
+  .hero-section-details-images
+  .second-image
+  .images
+  > img {
+  padding-top: 50px;
+} */
+
+/* UPDATED: Animation moves exactly half the height of the doubled content */
+@keyframes scroll-vertical {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(
+      -50%
+    ); /* Stops exactly when the duplicate set reaches the top */
+  }
+}
+
+.hero-section .hero-section-details .hero-section-details-images {
+  /* background-color: red; */
+  width: 812px;
+  height: 720px;
+  opacity: 1;
+  left: 600px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  overflow: hidden;
+}
+
+/* --- First Column --- */
+.hero-section .hero-section-details .hero-section-details-images .first-image {
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  /* Ensure height is auto so it contains both original and duplicate sets */
+  height: auto;
+
+  /* Logic: 10s duration, infinite loop, linear speed */
+  animation: scroll-vertical 10s linear infinite;
+}
+
+/* Pause ONLY the first image on hover */
+.hero-section
+  .hero-section-details
+  .hero-section-details-images
+  .first-image:hover {
+  animation-play-state: paused;
+}
+
+/* --- Second Column --- */
+.hero-section .hero-section-details .hero-section-details-images .second-image {
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  height: auto;
+
+  /* Slower speed for parallax effect */
+  animation: scroll-vertical 15s linear infinite;
+}
+
+/* Pause ONLY the second image on hover */
+.hero-section
+  .hero-section-details
+  .hero-section-details-images
+  .second-image:hover {
+  animation-play-state: paused;
+}
+
+/* Common Image Styles */
+.hero-section
+  .hero-section-details
+  .hero-section-details-images
+  .first-image
+  .images,
+.hero-section
+  .hero-section-details
+  .hero-section-details-images
+  .second-image
+  .images {
+  width: 200px;
+  height: 440px;
+  display: block; /* Ensures they stack properly */
+}
+
+.hero-section
+  .hero-section-details
+  .hero-section-details-images
+  .second-image
+  .images
+  > img {
+  padding-top: 50px;
 }
 
 /* =====================================================
