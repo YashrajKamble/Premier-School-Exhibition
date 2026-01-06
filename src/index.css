@@ -166,6 +166,60 @@
 }
 
 /* =====================================================
+   BEST FIT SECTION - MOBILE RESPONSIVENESS
+   ===================================================== */
+
+@media (max-width: 767px) {
+  .best-fit span {
+    font-size: 28px;
+    max-width: 250px;
+    margin-left: 30px;
+  }
+
+  .best-fit .best-fit-row {
+    display: flex;
+    overflow-x: auto;
+    padding: 0 10px;
+    gap: 15px;
+    justify-content: flex-start;
+  }
+
+  .best-fit .best-fit-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .best-fit .best-fit-row {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+
+  .best-fit .best-fit-row .best-fit-col {
+    min-width: 80%;
+    flex-shrink: 0;
+    margin-bottom: 1px;
+  }
+
+  .best-fit .best-fit-row .best-fit-col img {
+    height: 280px;
+    width: 290px;
+  }
+
+  .best-fit .best-fit-row .best-fit-col .best-fit-heading {
+    font-size: 16px;
+    /* width: auto; */
+    max-width: 280px;
+    top: -130px;
+  }
+
+  .best-fit .best-fit-row .best-fit-col .best-fit-sub-heading {
+    max-width: 239px;
+    font-size: 16px;
+    width: 90%;
+    top: -130px;
+  }
+}
+
+/* =====================================================
    OPPORTUNITIES SECTION - MOBILE RESPONSIVENESS
    ===================================================== */
 
