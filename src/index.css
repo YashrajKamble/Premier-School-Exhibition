@@ -1,6 +1,9 @@
 /* =====================================================
   HERO SECTION
    ===================================================== */
+.hero-section {
+  position: relative;
+}
 
 .hero-section .hero-section-details {
   background-color: pink;
@@ -369,6 +372,45 @@
 
 .hero-section .hero-section-details .hero-section-details-enquiry div {
   color: #ffffff;
+}
+
+/* =====================================================
+Header Section
+ ===================================================== */
+
+.header {
+  height: 30px;
+  min-width: auto;
+  height: 100px;
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.header div img {
+  z-index: 0;
+  margin: -10px;
+}
+
+.register {
+  gap: 10px;
+  display: flex;
+  margin-right: 100px;
+}
+
+/* left gradient icon section */
+.header .register-icon img {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: #3f186a;
+  margin-top: 1px;
+}
+
+/* right white text section */
+.register-text {
+  border: 2px solid black;
+  padding: 10px;
 }
 
 /* =====================================================
