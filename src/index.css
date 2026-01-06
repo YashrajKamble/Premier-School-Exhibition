@@ -424,6 +424,19 @@ Header Section
   }
 }
 
+@media (max-width: 767px) {
+  .hero-section .hero-section-trust {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* max-width: 150px; */
+    /* background-color: #3f186a; */
+  }
+
+  .hero-section .hero-section-trust img {
+    width: 135px;
+  }
+}
+
 /* =====================================================
    Participating Schools SECTION - MOBILE RESPONSIVENESS
    ===================================================== */
