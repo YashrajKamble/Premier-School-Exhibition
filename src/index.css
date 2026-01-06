@@ -20,6 +20,106 @@
   gap: 45px;
 }
 
+.hero-section .hero-section-details {
+  /* background-color: yellow; */
+  background: linear-gradient(
+    270deg,
+    #4b0f75 0%,
+    #3f186a 20%,
+    #1e1638 65%,
+    #001231 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 720px;
+}
+
+.hero-section .hero-section-details .hero-section-details-places {
+  /* background-color: aquamarine; */
+  position: absolute;
+  /* top: 100px; */
+  /* left: 20px; */
+  width: 520px;
+  height: 562px;
+  top: 90px;
+  left: 100px;
+  opacity: 1;
+}
+
+.hero-section .hero-section-details .hero-section-details-places span {
+  /* background-color: red; */
+  width: 472;
+  height: 72;
+  opacity: 1;
+  font-family: "Museo Sans 700";
+  font-weight: 600;
+  font-style: Regular;
+  font-size: 48px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #ffcc81;
+}
+
+.hero-section .hero-section-details .hero-section-details-places .table {
+  background-color: red;
+  border-radius: 27px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #f6ca8d;
+  height: 331px;
+  width: 414px;
+  /* top: 216px; */
+  outline: 2px solid #3f186ab2;
+  outline-offset: -6px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-section .hero-section-details .hero-section-details-places .table .data {
+  /* background-color: pink; */
+  margin-left: 20px;
+}
+
+.hero-section
+  .hero-section-details
+  .hero-section-details-places
+  .table
+  .data
+  .heading {
+  width: 152;
+  height: 54;
+  opacity: 1;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  font-variant: small-caps;
+}
+
+.hero-section
+  .hero-section-details
+  .hero-section-details-places
+  .table
+  .data
+  .sub-heading {
+  width: 152;
+  height: 54;
+  opacity: 1;
+  font-family: Open Sans;
+  font-weight: 300;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  font-variant: small-caps;
+  color: #000e38;
+}
+
 /* =====================================================
    Participating Schools SECTION - MOBILE RESPONSIVENESS
    ===================================================== */
