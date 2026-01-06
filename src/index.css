@@ -1,4 +1,26 @@
 /* =====================================================
+  HERO SECTION
+   ===================================================== */
+
+.hero-section .hero-section-details {
+  background-color: pink;
+}
+
+.hero-section .hero-section-trust {
+  min-width: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.hero-section .hero-section-trust img {
+  width: 309px;
+  height: 165px;
+  padding: 70px 20px;
+  gap: 45px;
+}
+
+/* =====================================================
    Participating Schools SECTION - MOBILE RESPONSIVENESS
    ===================================================== */
 
