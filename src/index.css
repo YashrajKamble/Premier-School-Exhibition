@@ -111,16 +111,21 @@
     /* border-color: red; */
   }
 
+  .opportunities {
+    margin-bottom: 1px;
+  }
+
   /* Position text on top of image */
   .opportunities .top {
     position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 10%;
+    left: 6%;
+    transform: none;
     color: #ffffff;
-    max-width: 85%;
-    text-align: center;
+    max-width: 5%;
+    text-align: left;
     z-index: 2;
+    margin-top: -40px;
   }
 
   .opportunities .top .pre-heading {
@@ -147,15 +152,14 @@
   .opportunities .button {
     position: absolute;
     bottom: 15%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 6%;
+    transform: none;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    /* gap: px; */
+    justify-content: flex-start;
     padding: 0;
     z-index: 2;
-    /* background-color: rebeccapurple; */
+    margin-bottom: 40px;
   }
 
   .opportunities .button .logo > img {
